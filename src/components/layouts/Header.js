@@ -7,7 +7,6 @@ export default class Header extends Component {
 
     render() {
         return(
-            <header>
                 <nav className= 'navbar navbar-expand-md navbar-dark bg-dark fixed-top'>
                     <Link to="/">
                         <img
@@ -24,22 +23,25 @@ export default class Header extends Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item">
-                                <Link className="nav-link" to="#home">Home</Link>
+                            <li className="nav-item ">
+                                <a className="nav-link" href="#home">Home</a>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#home">Skills</Link>
+                                <a className="nav-link" href="#about">About Me</a>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#home">Portfolio</Link>
+                                <a className="nav-link" href="#skills">Skills</a>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#home">Contacts</Link>
+                                <a className="nav-link" href="#services">services</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#contacts">contacts</a>
+
                             </li>
                         </ul>
                     </div>
                 </nav>
-            </header>
         )
     }
 }
