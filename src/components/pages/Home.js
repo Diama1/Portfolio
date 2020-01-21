@@ -27,7 +27,31 @@ export default class Portfolio extends Component {
                  
                 </div>
                 <div id="about" className="offset">
-                  
+                  <div className="container padding">
+                    <div className="row padding">
+                      <div className="col-md-12 col-lg-6">
+                        < h2> I am Diane,</h2>
+                        <p>
+                          I design and develop services for customers of all sizes, 
+                          specializing in creating stylish, 
+                          modern websites, web services and online stores.
+                        </p>
+                        <p>
+                          My passion is to design digital user experiences 
+                          through the bold interface and meaningful interactions.
+                        </p>
+                        <br />
+                        <a className="btn btn-primary" href="#">
+                          Learn More
+                        </a>
+
+                      </div>
+                      <div className="col-md-12 col-lg-6">
+                        <img className="img-fluid" src="https://www.howwemadeitinafrica.com/wp-content/uploads/2019/01/database-computer-coding.jpg" />
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
                 </div>
                 <div id="skills" className="offset">
 
