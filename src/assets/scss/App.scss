@@ -64,9 +64,10 @@ body {
 }
 
 #about {
-    padding: 7.4rem 4.4rem;
+    padding-top: 7.4rem;
+    padding-bottom: 5rem;
     .col-lg-6{
-        padding: 0 2.3rem 6.3rem 2.3rem;
+        padding: 0 2.3rem 2.4rem 2.3rem;
     }
     hr {
         border: 0;
@@ -87,4 +88,48 @@ body {
         }
     }
         
+}
+
+.fixed {
+    background-image: url(https://www.10wallpaper.com/wallpaper/2560x1600/1711/Study_desk_desk_lamp_notebook_Photo_HD_Wallpaper_2560x1600.jpg) !important;
+    z-index: -1;
+}
+.dark {
+    background-color: rgba($color: $black, $alpha: 0.75);
+    color: $white;
+    padding: 7rem 2rem;
+}
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+
+}
+.heading-underline {
+     width: 3rem;
+     height: .2rem;
+     background-color: $primary-color;
+     margin: 0 auto 2rem;
+}
+.fixed-background h3 {
+
+}
+.fixed-background p {
+
+}
+.feature {
+
+    .fas {
+        color: $primary-color;
+    }
+    h3 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        padding-bottom: .4rem;
+          
+    }
+    p {
+        font-size: 1.1rem;
+    }
 }

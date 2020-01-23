@@ -41,7 +41,7 @@ export default class Portfolio extends Component {
                           through the bold interface and meaningful interactions.
                         </p>
                         <br />
-                        <a className="btn btn-primary" href="#">
+                        <a className="btn btn-primary " href="#">
                           Learn More
                         </a>
 
@@ -50,15 +50,62 @@ export default class Portfolio extends Component {
                         <img className="img-fluid" src="https://www.howwemadeitinafrica.com/wp-content/uploads/2019/01/database-computer-coding.jpg" />
                       </div>
                     </div>
-                    <hr />
+                    {/* <hr /> */}
+                  </div>
+                </div>
+                <div id="services" className="offset">
+                  <div className="fixed-background">
+                      <div className="row dark text-center ">
+                        <div className="col-12">
+                          <h3 className="heading">Service offers</h3>
+                          <div className="heading-underline"></div>
+                        </div>
+                        <div className="col-md-4">
+                          <div className="feature">
+                            <i className="fas fa-code fa-3x"></i>
+                          </div>
+                          <h3 className="heading">UI/UX Design</h3>
+                          <p className="lead">Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua.
+                          </p>
+                        </div>
+                        <div className="col-md-4">
+                          <div className="feature">
+                            <i className="fas fa-code fa-3x"></i>
+                          </div>
+                          <h3 className="heading">Web development</h3>
+                          <p className="lead">Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua.
+                          </p>
+                        </div>
+                        <div className="col-md-4">
+                          <div className="feature">
+                            <i className="fas fa-code fa-3x"></i>
+                          </div>
+                          <h3 className="heading">Web Maintenance</h3>
+                          <p className="lead">Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="fixed-wrap">
+                        <div className="fixed">
+                          
+                        </div>
+                      </div>
                   </div>
                 </div>
                 <div id="skills" className="offset">
 
                 </div>
-                <div id="services" className="offset">
-                </div>
                 <div id="contacts" className="offset">
+                  
                 </div>
               </div>
           
