@@ -133,3 +133,32 @@ h3.heading {
         font-size: 1.1rem;
     }
 }
+
+footer {
+    background-color: $gray;
+    color: $white;
+    font-weight: 400;
+    padding: 2rem 0 2rem;
+
+    img {
+        margin: 1.5rem 0;
+        height: 4rem;
+        width: 4rem;
+    }
+    a {
+        color: $white;
+    }
+    .fab {
+        font-size: 1.6rem;
+        margin: 1.2rem .5rem 0 0;
+
+        &:hover {
+            color: $primary-color !important;
+        }
+    }
+    hr.socket {
+        width: 100%;
+        border-top: .2rem solid $secondary-color;
+        margin-top: 3rem;
+    }
+}

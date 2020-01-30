@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from '../layouts/Header';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
+
 
 
 export default class Portfolio extends Component {
@@ -105,7 +107,27 @@ export default class Portfolio extends Component {
 
                 </div>
                 <div id="contacts" className="offset">
-                  
+                  <footer>
+                      <div className="row justify-content-center">
+                        <div className="col-md-5 text-center">
+                          <img src={logo} alt="Logo"  />
+                          <p> Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua 
+                          </p>
+                          <strong> Contact info </strong>
+                          <p>+(250)78983920 <br />email@diama.com </p>
+                          <a href="https://www.facebook.com/diane.mahoro.3" target="_blank"><i class="fab fa-facebook-square"></i></a>   
+                          <a href="https://twitter.com/Diama1Dev48" target="_blank"><i className="fab fa-twitter-square"></i></a>
+                          <a href="/" target="_blank"><i className="fab fa-instagram"></i></a>
+
+                        </div>
+                        <hr className="socket" />
+                        &copy; diama Code
+  
+                      </div>
+                    </footer>
                 </div>
               </div>
           
