@@ -3,8 +3,6 @@ import Header from '../layouts/Header';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 
-
-
 export default class Portfolio extends Component {
      render(){
          return(
@@ -104,7 +102,69 @@ export default class Portfolio extends Component {
                   </div>
                 </div>
                 <div id="skills" className="offset">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <img className="img-fluid" src="https://miro.medium.com/max/7136/1*UMBVvBykFuYM5T4XfiCrHA.png" alt="Alt" />
+                    </div>
+                    <div className="col-md-12 col-lg-6">
+                      <div className="card mt-5 ">
+                          <div className="card-body">
+                            <h3 className="card-title text-uppercase">
+                              My skills
+                            </h3>
+                            <div className="skill">
+                              <div className="progress-lt">
+                                <h6>Html/css</h6>
+                                <span>92%</span>
+                                <div className="progress">
+                                  <div 
+                                  className="progress-bar theme-g-bg" 
+                                  role="progressbar" 
+                                  aria-valuenow="92" 
+                                  aria-valuemin="0" 
+                                  aria-valuemax="100" 
+                                  style={{ width: "92%", }}>
 
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="progress-lt">
+                                <h6>Javascript</h6>
+                                <span>89%</span>
+                                <div className="progress">
+                                  <div 
+                                  className="progress-bar theme-g-bg" 
+                                  role="progressbar" 
+                                  aria-valuenow="89" 
+                                  aria-valuemin="0" 
+                                  aria-valuemax="100" 
+                                  style={{ width: "89%", }}>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="progress-lt">
+                                <h6>Python</h6>
+                                <span>76%</span>
+                                <div className="progress">
+                                  <div 
+                                  className="progress-bar theme-g-bg" 
+                                  role="progressbar" 
+                                  aria-valuenow="76" 
+                                  aria-valuemin="0" 
+                                  aria-valuemax="100" 
+                                  style={{ width: "76%", }}>
+
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div id="contacts" className="offset">
                   <footer>
