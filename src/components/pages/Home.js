@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import Header from '../layouts/Header';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
-<<<<<<< HEAD
-=======
 import cv from '../../assets/docs/myResume.pdf'
->>>>>>> Ft(skills): creating skills progress bar
 
 export default class Portfolio extends Component {
      render(){
@@ -131,16 +128,10 @@ export default class Portfolio extends Component {
                     <div className="col-md-12 col-lg-6">
                       <div className="card mt-5 ">
                           <div className="card-body">
-<<<<<<< HEAD
-                            <h3 className="card-title text-uppercase">
-                              My skills
-                            </h3>
-=======
                             <h4 className="card-title text-uppercase font-weight-bold">
                               My skills
                             </h4>
                             <div className="heading-underline"></div>
->>>>>>> Ft(skills): creating skills progress bar
                             <div className="skill">
                               <div className="progress-lt">
                                 <h6>Html/css</h6>
@@ -157,8 +148,6 @@ export default class Portfolio extends Component {
                                   </div>
                                 </div>
                               </div>
-<<<<<<< HEAD
-
                               <div className="progress-lt">
                                 <h6>Javascript</h6>
                                 <span>89%</span>
@@ -186,36 +175,6 @@ export default class Portfolio extends Component {
                                   aria-valuemax="100" 
                                   style={{ width: "76%", }}>
 
-=======
-
-                              <div className="progress-lt">
-                                <h6>Javascript</h6>
-                                <span>89%</span>
-                                <div className="progress">
-                                  <div 
-                                  className="progress-bar theme-g-bg" 
-                                  role="progressbar" 
-                                  aria-valuenow="89" 
-                                  aria-valuemin="0" 
-                                  aria-valuemax="100" 
-                                  style={{ width: "89%", }}>
-
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="progress-lt">
-                                <h6>Python</h6>
-                                <span>76%</span>
-                                <div className="progress">
-                                  <div 
-                                  className="progress-bar theme-g-bg" 
-                                  role="progressbar" 
-                                  aria-valuenow="76" 
-                                  aria-valuemin="0" 
-                                  aria-valuemax="100" 
-                                  style={{ width: "76%", }}>
-
->>>>>>> Ft(skills): creating skills progress bar
                                   </div>
                                 </div>
                               </div>
@@ -225,10 +184,7 @@ export default class Portfolio extends Component {
                       </div>
                     </div>
                   </div>
-<<<<<<< HEAD
-=======
                   </div>
->>>>>>> Ft(skills): creating skills progress bar
                 </div>
                 <div id="contacts" className="offset">
                   <footer>
