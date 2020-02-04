@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Header from '../layouts/Header';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
+<<<<<<< HEAD
+=======
+import cv from '../../assets/docs/myResume.pdf'
+>>>>>>> Ft(skills): creating skills progress bar
 
 export default class Portfolio extends Component {
      render(){
@@ -20,8 +24,8 @@ export default class Portfolio extends Component {
                       <h4> Hello, I am</h4>
                       <h1>Diane Mahoro</h1>
                       <p>Lorem.....</p>
-                      <Link className="btn btn-outline-light btn-lg" to="#">
-                        get Started
+                      <Link className="btn btn-outline-light btn" target="_blank" to={cv}>
+                        Download CV
                       </Link>
                     </div>
                  
@@ -30,7 +34,7 @@ export default class Portfolio extends Component {
                   <div className="container padding">
                     <div className="row padding">
                       <div className="col-md-12 col-lg-6">
-                        < h2> I am Diane,</h2>
+                        <h4> I am Diane,</h4>
                         <p>
                           I design and develop services for customers of all sizes, 
                           specializing in creating stylish, 
@@ -41,9 +45,9 @@ export default class Portfolio extends Component {
                           through the bold interface and meaningful interactions.
                         </p>
                         <br />
-                        <a className="btn btn-primary " href="#">
+                        <Link className="btn btn-outline-light " to="#">
                           Learn More
-                        </a>
+                        </Link>
 
                       </div>
                       <div className="col-md-12 col-lg-6">
@@ -64,7 +68,7 @@ export default class Portfolio extends Component {
                           <div className="feature">
                             <i className="fas fa-code fa-3x"></i>
                           </div>
-                          <h3 className="heading">UI/UX Design</h3>
+                          <h4 className="heading">UI/UX Design</h4>
                           <p className="lead">Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit, 
                             sed do eiusmod tempor incididunt ut 
@@ -75,7 +79,7 @@ export default class Portfolio extends Component {
                           <div className="feature">
                             <i className="fas fa-code fa-3x"></i>
                           </div>
-                          <h3 className="heading">Web development</h3>
+                          <h4 className="heading">Web development</h4>
                           <p className="lead">Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit, 
                             sed do eiusmod tempor incididunt ut 
@@ -86,7 +90,7 @@ export default class Portfolio extends Component {
                           <div className="feature">
                             <i className="fas fa-code fa-3x"></i>
                           </div>
-                          <h3 className="heading">Web Maintenance</h3>
+                          <h4 className="heading">Web Maintenance</h4>
                           <p className="lead">Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit, 
                             sed do eiusmod tempor incididunt ut 
@@ -102,16 +106,41 @@ export default class Portfolio extends Component {
                   </div>
                 </div>
                 <div id="skills" className="offset">
+                  <div className="container">
                   <div className="row">
-                    <div className="col-md-6">
-                      <img className="img-fluid" src="https://miro.medium.com/max/7136/1*UMBVvBykFuYM5T4XfiCrHA.png" alt="Alt" />
+                    <div id="summary" className="col-md-12 col-lg-6 ">
+                      <div className="card mt-5 ">
+                        <div className="card-body">
+                          < h4 className="font-weight-bold">Make Special things with you passion</h4>
+                          <p>
+                            I design and develop services for customers of all sizes, 
+                            specializing in creating stylish, 
+                            modern websites, web services and online stores.
+                          </p>
+                          <p>
+                            My passion is to design digital user experiences 
+                            through the bold interface and meaningful interactions.
+                          </p>
+                          <br />
+                          <Link className="btn btn-outline-light" to="#">
+                            Learn More
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                     <div className="col-md-12 col-lg-6">
                       <div className="card mt-5 ">
                           <div className="card-body">
+<<<<<<< HEAD
                             <h3 className="card-title text-uppercase">
                               My skills
                             </h3>
+=======
+                            <h4 className="card-title text-uppercase font-weight-bold">
+                              My skills
+                            </h4>
+                            <div className="heading-underline"></div>
+>>>>>>> Ft(skills): creating skills progress bar
                             <div className="skill">
                               <div className="progress-lt">
                                 <h6>Html/css</h6>
@@ -128,6 +157,7 @@ export default class Portfolio extends Component {
                                   </div>
                                 </div>
                               </div>
+<<<<<<< HEAD
 
                               <div className="progress-lt">
                                 <h6>Javascript</h6>
@@ -156,6 +186,36 @@ export default class Portfolio extends Component {
                                   aria-valuemax="100" 
                                   style={{ width: "76%", }}>
 
+=======
+
+                              <div className="progress-lt">
+                                <h6>Javascript</h6>
+                                <span>89%</span>
+                                <div className="progress">
+                                  <div 
+                                  className="progress-bar theme-g-bg" 
+                                  role="progressbar" 
+                                  aria-valuenow="89" 
+                                  aria-valuemin="0" 
+                                  aria-valuemax="100" 
+                                  style={{ width: "89%", }}>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="progress-lt">
+                                <h6>Python</h6>
+                                <span>76%</span>
+                                <div className="progress">
+                                  <div 
+                                  className="progress-bar theme-g-bg" 
+                                  role="progressbar" 
+                                  aria-valuenow="76" 
+                                  aria-valuemin="0" 
+                                  aria-valuemax="100" 
+                                  style={{ width: "76%", }}>
+
+>>>>>>> Ft(skills): creating skills progress bar
                                   </div>
                                 </div>
                               </div>
@@ -165,6 +225,10 @@ export default class Portfolio extends Component {
                       </div>
                     </div>
                   </div>
+<<<<<<< HEAD
+=======
+                  </div>
+>>>>>>> Ft(skills): creating skills progress bar
                 </div>
                 <div id="contacts" className="offset">
                   <footer>
