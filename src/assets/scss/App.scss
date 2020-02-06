@@ -49,18 +49,21 @@ body {
         text-shadow: .1rem .1rem .8rem $black;
     }
     p {
-        font-size: 1.3rem;
+        font-size: $p-font-size;
         text-shadow: .1rem .1rem .8rem $black;
     }
 }
 
-.btn-lg {
-    border-width: medium;
-    border-radius: 0;
-    padding: .6rem 1.3rem;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: 700;
+.btn {
+    color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $black;
+        border: solid 1px $primary-color;
+    }
+    
 }
 
 #about {
@@ -68,6 +71,11 @@ body {
     padding-bottom: 5rem;
     .col-lg-6{
         padding: 0 2.3rem 2.4rem 2.3rem;
+
+        h4 {
+            font-size: $h4-font-size;
+            font-weight: 600;
+        }
     }
     hr {
         border: 0;
@@ -75,14 +83,14 @@ body {
         background-color: $white;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(30, 187, 163, 0.75), rgba(255, 255, 255, 0));
     }
-    .btn-primary {
+    .btn {
         background-color: $primary-color;
         border-color: $primary-color !important;
         font-weight: 700;
         color: $white;
 
         &:hover {
-            background-color: $white;
+            background-color: transparent;
             color: $primary-color;
             border: solid 1px $primary-color;
         }
@@ -98,6 +106,13 @@ body {
     background-color: rgba($color: $black, $alpha: 0.75);
     color: $white;
     padding: 7rem 2rem;
+
+    .heading-underline {
+        width: 3rem;
+        height: .2rem;
+        background-color: $primary-color;
+        margin: 0 auto 2rem;
+   }
 }
 h3.heading {
     font-size: 1.9rem;
@@ -106,16 +121,12 @@ h3.heading {
     margin-bottom: 1.9rem;
 
 }
-.heading-underline {
-     width: 3rem;
-     height: .2rem;
-     background-color: $primary-color;
-     margin: 0 auto 2rem;
-}
-.fixed-background h3 {
+
+.fixed-background h4 {
 
 }
 .fixed-background p {
+    font-size: $p-font-size;
 
 }
 .feature {
@@ -123,14 +134,83 @@ h3.heading {
     .fas {
         color: $primary-color;
     }
-    h3 {
-        font-size: 1.3rem;
+    h4 {
+        font-size: $h4-font-size;
         text-transform: uppercase;
         padding-bottom: .4rem;
           
     }
-    p {
-        font-size: 1.1rem;
+    
+}
+
+#skills {
+    padding-top: 2.0rem;
+    padding-bottom: 4.4rem;
+
+    .btn {
+        background-color: $primary-color;
+        border-color: $primary-color !important;
+        font-weight: 700;
+        color: $white;
+
+        &:hover {
+            background-color: transparent;
+            color: $primary-color;
+            border: solid 1px $primary-color;
+        }
+    }
+    #summary {
+        h4 {
+            font-size: $h4-font-size;
+            margin-bottom: 1.2rem;
+        }
+       
+    }
+    .card {
+        border:none;
+        .heading-underline {
+            width: 3rem;
+            height: .2rem;
+            background-color: $primary-color;
+            margin-top: 1rem;
+       }
+        .progress-lt {
+            margin-top: 1.5rem;
+          }
+        .progress-lt h6 {
+            display: inline-block;
+            width: 47%;
+            margin-right: 1.5%;
+            color: #222;
+            margin: 0;
+            padding: 0 0 6px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .progress-lt span {
+            position: absolute;
+            right: 10.5%;
+            font-size: 0.75rem;
+          }
+          .progress-lt .progress {
+            margin-bottom: 0;
+            height: 6px;
+            border-radius: 3.125rem;
+          }
+          .progress-lt .progress-bar {
+            width: 0%;
+            background: $primary-color;
+            background: -webkit-linear-gradient(to right, #158272, $primary-color);
+            background: linear-gradient(to right, #158272, $primary-color);
+            -webkit-transition: width 1.2s ease;
+               -moz-transition: width 1.2s ease;  
+                 -o-transition: width 1.2s ease;  
+                    transition: width 1.2s ease;
+            
+          }
+          
+            
     }
 }
 
