@@ -214,50 +214,6 @@ h3.heading {
     }
 }
 
-#skills {
-    .card {
-        border:none;
-
-        .progress-lt {
-            margin-top: 1.5rem;
-          }
-        .progress-lt h6 {
-            display: inline-block;
-            width: 47%;
-            margin-right: 1.5%;
-            color: #222;
-            margin: 0;
-            padding: 0 0 6px;
-            font-size: 12px;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-        .progress-lt span {
-            position: absolute;
-            right: 10.5%;
-            font-size: 12px;
-          }
-          .progress-lt .progress {
-            margin-bottom: 0;
-            height: 6px;
-            border-radius: 50px;
-          }
-          .progress-lt .progress-bar {
-            width: 0%;
-            background: #00c6ff;
-            background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-            background: linear-gradient(to right, #0072ff, #00c6ff);
-            -webkit-transition: width 1.2s ease;
-               -moz-transition: width 1.2s ease;  
-                 -o-transition: width 1.2s ease;  
-                    transition: width 1.2s ease;
-            
-          }
-          
-            
-    }
-}
-
 footer {
     background-color: $gray;
     color: $white;
