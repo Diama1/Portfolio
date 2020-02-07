@@ -3,242 +3,344 @@
 @import './abstracts/variables';
 
 body {
-    overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
-    color: $secondary-color;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: $secondary-color;
 }
 
 .navbar {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: .9rem;
-    letter-spacing: .1rem;
-    background-color: rgba(0,0,0,0.6) !important;
-    
-    .navbar-brand img {
-        height: 2rem;
-    }
-    .navbar-nav li {
-        padding-right: .7rem ;
-    }
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+
+  .navbar-brand img {
+    height: 2rem;
+  }
+  .navbar-nav li {
+    padding-right: 0.7rem;
+  }
 }
 .navbar-dark .navbar-nav .nav-link {
-    color:$white;
-    padding-top: .8rem;
+  color: $white;
+  padding-top: 0.8rem;
 }
-.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: $primary-color;
-};
+  color: $primary-color;
+}
 
 .home-inner {
-    background-image: url(https://www.m2asolutions.com/wp-content/uploads/2018/07/computer.jpg);
+  background-image: url(https://www.m2asolutions.com/wp-content/uploads/2018/07/computer.jpg);
 }
 .caption {
-    width: 100%;
-    max-width: 100%;
-    position: absolute;
-    top: 38%;
-    padding-left:15%;
-    z-index: 1;
-    color: $white;
-    
-    h1 {
-        font-weight: 700;
-        font-size: 2.7rem;
-        text-shadow: .1rem .1rem .8rem $black;
-    }
-    p {
-        font-size: $p-font-size;
-        text-shadow: .1rem .1rem .8rem $black;
-    }
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  padding-left: 15%;
+  z-index: 1;
+  color: $white;
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.7rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem $black;
+  }
+  p {
+    font-size: $p-font-size;
+    text-shadow: 0.1rem 0.1rem 0.8rem $black;
+  }
 }
 
 .btn {
-    color: $primary-color;
-    border-color: $primary-color;
+  color: $primary-color;
+  border-color: $primary-color;
 
-    &:hover {
-        background-color: $primary-color;
-        color: $black;
-        border: solid 1px $primary-color;
-    }
-    
+  &:hover {
+    background-color: $primary-color;
+    color: $black;
+    border: solid 1px $primary-color;
+  }
 }
 
 #about {
-    padding-top: 7.4rem;
-    padding-bottom: 5rem;
-    .col-lg-6{
-        padding: 0 2.3rem 2.4rem 2.3rem;
+  padding-top: 7.4rem;
+  padding-bottom: 5rem;
+  .col-lg-6 {
+    padding: 0 2.3rem 2.4rem 2.3rem;
 
-        h4 {
-            font-size: $h4-font-size;
-            font-weight: 600;
-        }
+    h4 {
+      font-size: $h4-font-size;
+      font-weight: 600;
     }
-    hr {
-        border: 0;
-        height: 3px;
-        background-color: $white;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(30, 187, 163, 0.75), rgba(255, 255, 255, 0));
-    }
-    .btn {
-        background-color: $primary-color;
-        border-color: $primary-color !important;
-        font-weight: 700;
-        color: $white;
+  }
+  hr {
+    border: 0;
+    height: 3px;
+    background-color: $white;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(30, 187, 163, 0.75),
+      rgba(255, 255, 255, 0)
+    );
+  }
+  .btn {
+    background-color: $primary-color;
+    border-color: $primary-color !important;
+    font-weight: 700;
+    color: $white;
 
-        &:hover {
-            background-color: transparent;
-            color: $primary-color;
-            border: solid 1px $primary-color;
-        }
+    &:hover {
+      background-color: transparent;
+      color: $primary-color;
+      border: solid 1px $primary-color;
     }
-        
+  }
 }
 
 .fixed {
-    background-image: url(https://www.10wallpaper.com/wallpaper/2560x1600/1711/Study_desk_desk_lamp_notebook_Photo_HD_Wallpaper_2560x1600.jpg) !important;
-    z-index: -1;
+  background-image: url(https://www.10wallpaper.com/wallpaper/2560x1600/1711/Study_desk_desk_lamp_notebook_Photo_HD_Wallpaper_2560x1600.jpg) !important;
+  z-index: -1;
 }
 .dark {
-    background-color: rgba($color: $black, $alpha: 0.75);
-    color: $white;
-    padding: 7rem 2rem;
+  background-color: rgba($color: $black, $alpha: 0.75);
+  color: $white;
+  padding: 7rem 2rem;
 
-    .heading-underline {
-        width: 3rem;
-        height: .2rem;
-        background-color: $primary-color;
-        margin: 0 auto 2rem;
-   }
+  .heading-underline {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: $primary-color;
+    margin: 0 auto 2rem;
+  }
 }
 h3.heading {
-    font-size: 1.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1.9rem;
-
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
 }
 
 .fixed-background h4 {
-
 }
 .fixed-background p {
-    font-size: $p-font-size;
-
+  font-size: $p-font-size;
 }
 .feature {
-
-    .fas {
-        color: $primary-color;
-    }
-    h4 {
-        font-size: $h4-font-size;
-        text-transform: uppercase;
-        padding-bottom: .4rem;
-          
-    }
-    
+  .fas {
+    color: $primary-color;
+  }
+  h4 {
+    font-size: $h4-font-size;
+    text-transform: uppercase;
+    padding-bottom: 0.4rem;
+  }
 }
 
 #skills {
-    padding-top: 2.0rem;
-    padding-bottom: 4.4rem;
+  padding-top: 2rem;
+  padding-bottom: 4.4rem;
 
-    .btn {
-        background-color: $primary-color;
-        border-color: $primary-color !important;
-        font-weight: 700;
-        color: $white;
+  .btn {
+    background-color: $primary-color;
+    border-color: $primary-color !important;
+    font-weight: 700;
+    color: $white;
 
-        &:hover {
-            background-color: transparent;
-            color: $primary-color;
-            border: solid 1px $primary-color;
-        }
+    &:hover {
+      background-color: transparent;
+      color: $primary-color;
+      border: solid 1px $primary-color;
     }
-    #summary {
-        h4 {
-            font-size: $h4-font-size;
-            margin-bottom: 1.2rem;
-        }
-       
+  }
+  #summary {
+    h4 {
+      font-size: $h4-font-size;
+      margin-bottom: 1.2rem;
     }
-    .card {
-        border:none;
-        .heading-underline {
-            width: 3rem;
-            height: .2rem;
-            background-color: $primary-color;
-            margin-top: 1rem;
-       }
-        .progress-lt {
-            margin-top: 1.5rem;
-          }
-        .progress-lt h6 {
-            display: inline-block;
-            width: 47%;
-            margin-right: 1.5%;
-            color: #222;
+  }
+  .card {
+    border: none;
+    .heading-underline {
+      width: 3rem;
+      height: 0.2rem;
+      background-color: $primary-color;
+      margin-top: 1rem;
+    }
+    .progress-lt {
+      margin-top: 1.5rem;
+    }
+    .progress-lt h6 {
+      display: inline-block;
+      width: 47%;
+      margin-right: 1.5%;
+      color: #222;
+      margin: 0;
+      padding: 0 0 6px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .progress-lt span {
+      position: absolute;
+      right: 10.5%;
+      font-size: 0.75rem;
+    }
+    .progress-lt .progress {
+      margin-bottom: 0;
+      height: 6px;
+      border-radius: 3.125rem;
+    }
+    .progress-lt .progress-bar {
+      width: 0%;
+      background: $primary-color;
+      background: -webkit-linear-gradient(to right, #158272, $primary-color);
+      background: linear-gradient(to right, #158272, $primary-color);
+      -webkit-transition: width 1.2s ease;
+      -moz-transition: width 1.2s ease;
+      -o-transition: width 1.2s ease;
+      transition: width 1.2s ease;
+    }
+  }
+}
+
+#portfolio {
+  background-color: $whitesmoke;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  .portfolio-row{
+      padding: 0rem 2.2rem 0 2.2rem  ;
+  }
+
+  .heading-underline {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: $primary-color;
+    margin: 0 auto 2rem;
+  }
+  .portfolio-col {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    .portfolio-info {
+        text-align: center;
+        padding: 15px 0 10px;
+
+        h5 {
             margin: 0;
-            padding: 0 0 6px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-        .progress-lt span {
-            position: absolute;
-            right: 10.5%;
-            font-size: 0.75rem;
+            padding: 0 0 5px;
+            color: #151515;
+            font-weight: 700;
+            font-size: 16px;
           }
-          .progress-lt .progress {
-            margin-bottom: 0;
-            height: 6px;
-            border-radius: 3.125rem;
-          }
-          .progress-lt .progress-bar {
-            width: 0%;
-            background: $primary-color;
-            background: -webkit-linear-gradient(to right, #158272, $primary-color);
-            background: linear-gradient(to right, #158272, $primary-color);
-            -webkit-transition: width 1.2s ease;
-               -moz-transition: width 1.2s ease;  
-                 -o-transition: width 1.2s ease;  
-                    transition: width 1.2s ease;
-            
-          }
-          
-            
+
+        span {
+          font-size: 14px;
+          color: #666;
+          font-weight: 600; 
+      }
     }
+
+
+  }
+  .portfolio-col:hover .hover {
+    visibility: visible;
+    opacity: 1;
+  }
+  .portfolio-col:hover .action-btn a {
+    -webkit-transform: translateX(0px);
+       -moz-transform: translateX(0px);
+         -o-transform: translateX(0px);
+  }
+     
+  .portfolio-img {
+    position: relative;
+    height: 17.7rem;
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: 17.2rem;
+    }
+    .portfolio-hover {
+      background: rgba(255, 255, 255, 0.62);
+      position: absolute;
+      bottom: 0;
+      visibility: hidden;
+      opacity: 0;
+      left: 0;
+      text-align: center;
+      padding: 10px;
+      top: 0;
+      width: 70px;
+      -webkit-transition: ease all 0.35s;
+      -o-transition: ease all 0.35s;
+      -ms-transition: ease all 0.35s;
+      -moz-transition: ease all 0.35s;
+      transition: ease all 0.35s;
+
+      .action-btn a {
+        display: inline-block;
+        vertical-align: top;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background: #272727;
+        border-radius: 50%;
+        outline: none;
+        margin: 8px 0;
+        color: #fff;
+        -webkit-transition: ease all 0.35s;
+        -o-transition: ease all 0.35s;
+        -ms-transition: ease all 0.35s;
+        -moz-transition: ease all 0.35s;
+        transition: ease all 0.35s;
+        -webkit-transform: translateX(-17px);
+        -moz-transform: translateX(-17px);
+        -o-transform: translateX(-17px);
+        transform: translateX(-17px);
+
+
+        i.fa-play:before {
+            margin-left: 4px;
+          }
+      }
+    }
+  }
 }
 
 footer {
-    background-color: $gray;
+  background-color: $gray;
+  color: $white;
+  font-weight: 400;
+  padding: 2rem 0 2rem;
+
+  img {
+    margin: 1.5rem 0;
+    height: 4rem;
+    width: 4rem;
+  }
+  a {
     color: $white;
-    font-weight: 400;
-    padding: 2rem 0 2rem;
+  }
+  .fab {
+    font-size: 1.6rem;
+    margin: 1.2rem 0.5rem 0 0;
 
-    img {
-        margin: 1.5rem 0;
-        height: 4rem;
-        width: 4rem;
+    &:hover {
+      color: $primary-color !important;
     }
-    a {
-        color: $white;
-    }
-    .fab {
-        font-size: 1.6rem;
-        margin: 1.2rem .5rem 0 0;
-
-        &:hover {
-            color: $primary-color !important;
-        }
-    }
-    hr.socket {
-        width: 100%;
-        border-top: .2rem solid $secondary-color;
-        margin-top: 3rem;
-    }
+  }
+  hr.socket {
+    width: 100%;
+    border-top: 0.2rem solid $secondary-color;
+    margin-top: 3rem;
+  }
 }
