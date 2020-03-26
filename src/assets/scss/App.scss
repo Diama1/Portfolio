@@ -1,6 +1,7 @@
 @import 'fixed';
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 @import './abstracts/variables';
+@import './spinner';
 
 body {
   overflow-x: hidden;
@@ -130,6 +131,7 @@ h3.heading {
   font-size: $p-font-size;
 }
 .feature {
+  padding-bottom: 1rem;
   .fas {
     color: $primary-color;
   }

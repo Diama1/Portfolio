@@ -1,12 +1,25 @@
-import React, { Component } from 'react';
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable jsx-a11y/alt-text */
+import React, { Component, Fragment } from 'react';
 import Header from '../layouts/Header';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import cv from '../../assets/docs/myResume.pdf';
-import portfolio from '../../assets/images/skills.JPG';
+import { getAllServices } from '../../redux/actions/service.action';
+// import Loader from '../layouts/Loader';
 
-export default class Portfolio extends Component {
+export class Portfolio extends Component {
+
+
+  componentWillMount() {
+    const { getAllServices: getServices } = this.props;
+    getServices();
+  }
   render() {
+    // if (this.state.loading) return <Loader />;
+    const { serviceReducer } = this.props;
+  
     return (
       <div className='App' data-spy='scroll' data-target='#navbarResponsive'>
         <div id='home'>
@@ -61,36 +74,21 @@ export default class Portfolio extends Component {
                 <h3 className='heading'>Service offers</h3>
                 <div className='heading-underline'></div>
               </div>
-              <div className='col-md-4'>
-                <div className='feature'>
-                  <i className='fas fa-code fa-3x'></i>
-                </div>
-                <h4 className='heading'>UI/UX Design</h4>
-                <p className='lead'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className='col-md-4'>
-                <div className='feature'>
-                  <i className='fas fa-code fa-3x'></i>
-                </div>
-                <h4 className='heading'>Web development</h4>
-                <p className='lead'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className='col-md-4'>
-                <div className='feature'>
-                  <i className='fas fa-code fa-3x'></i>
-                </div>
-                <h4 className='heading'>Web Maintenance</h4>
-                <p className='lead'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
+              {
+                serviceReducer.list.map(service => (
+                <div className='col-md-4'>
+                  <div className='feature'>
+                    <i className='fas fa-code fa-3x'></i>
+                  </div>
+                  <h4 className='heading'>{service.title}</h4>
+                  <p className='lead'>
+                    {service.description}
+                  </p>
+                </div>  
+                ))
+              }
+
+
             </div>
             <div className='fixed-wrap'>
               <div className='fixed'></div>
@@ -211,7 +209,7 @@ export default class Portfolio extends Component {
                       </div>
                     </div>
                   </div>
-                  <div class="portfolio-info">
+                  <div className="portfolio-info">
                     <h5>Makeup </h5>
                     <span>Resent Work</span>
                   </div>
@@ -222,7 +220,7 @@ export default class Portfolio extends Component {
                   <div className='portfolio-img'>
                     <img src='https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/eeea3391912141.5e3d9ee163b10.jpg' />
                   </div>
-                  <div class="portfolio-info">
+                  <div className="portfolio-info">
                     <h5>the Earing</h5>
                     <span>Resent Work</span>
                   </div>
@@ -233,7 +231,7 @@ export default class Portfolio extends Component {
                   <div className='portfolio-img'>
                     <img src='https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/b3ba5b88438857.5df223c0e17b7.jpg' />
                   </div>
-                  <div class="portfolio-info">
+                  <div className="portfolio-info">
                     <h5>SuperDry</h5>
                     <span>Resent Work</span>
                   </div>
@@ -245,7 +243,7 @@ export default class Portfolio extends Component {
                   <div className='portfolio-img'>
                     <img src='https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/b3ba5b88438857.5df223c0e17b7.jpg' />
                   </div>
-                  <div class="portfolio-info">
+                  <div className="portfolio-info">
                     <h5>SuperDry</h5>
                     <span>Resent Work</span>
                   </div>
@@ -256,7 +254,7 @@ export default class Portfolio extends Component {
                   <div className='portfolio-img'>
                     <img src='https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/360a2b71229835.5bbe26acf27f3.jpg' />
                   </div>
-                  <div class="portfolio-info">
+                  <div className="portfolio-info">
                     <h5>Makeup </h5>
                     <span>Resent Work</span>
                   </div>
@@ -267,7 +265,7 @@ export default class Portfolio extends Component {
                   <div className='portfolio-img'>
                     <img src='https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/eeea3391912141.5e3d9ee163b10.jpg' />
                   </div>
-                  <div class="portfolio-info">
+                  <div className="portfolio-info">
                     <h5>SuperDry</h5>
                     <span>Resent Work</span>
                   </div>
@@ -294,7 +292,7 @@ export default class Portfolio extends Component {
                 <a
                   href='https://www.facebook.com/diane.mahoro.3'
                   target='_blank'>
-                  <i class='fab fa-facebook-square'></i>
+                  <i className='fab fa-facebook-square'></i>
                 </a>
                 <a href='https://twitter.com/Diama1Dev48' target='_blank'>
                   <i className='fab fa-twitter-square'></i>
@@ -312,3 +310,11 @@ export default class Portfolio extends Component {
     );
   }
 }
+
+const mapStateToProps = ({ serviceReducer }) => ({
+  serviceReducer,
+});
+export default connect(
+  mapStateToProps,
+  { getAllServices },
+)(Portfolio);
